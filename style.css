@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(images/pexels-josh-hild-2422497.jpg);
+    background-position: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-image 1s ease-in-out;
+    background-repeat: no-repeat;
+}
+.bigDiv{
+    background: linear-gradient( rgb(141, 187, 231), rgb(140, 128, 248));
+    width: 90%;
+    max-width: 370px;
+    margin: 100px auto 0;
+    padding: 35px 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+}
+.flexone {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexone input {
+    padding: 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    flex: 1;
+    margin-right: 16px;
+}
+.flexone button {
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+}
+.flexone button img {
+    width: 20px;
+    
+}
+.weather {
+    margin-top: 10px;
+}
+.weather h2 {
+    margin-top: 10px;
+}
+.weather-icon {
+    width: 100px;
+    margin-top: 10px;
+    /* display: none; */
+    margin: auto;
+}
+.moreinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+.humidity, .wind {
+    font-size: 25px;
+    margin-top: -10px;
+}
+.invalid {
+    margin-top: 10px;
+    color: rgb(190, 133, 133);
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .col img {
+        width: 20px;
+    }
+    .humidity, .wind {
+        font-size: 15px;
+        
+    }
+    .speed {
+        font-size: 12px ;
+    }
+
+    .flexone button {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        
+    }
+    .weather-icon {
+        width: 70px;
+    }
+    .app {
+        font-size: 20px;
+    }
+}
+

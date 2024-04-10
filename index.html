@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(114, 150, 36); position: relative; top: 90px;" class="app">WEATHER APP</h1>
+    <div class="bigDiv">
+        <div class="flexone">
+            <input type="text"  id="searchCity" placeholder="Enter city name">
+            <button><img src="images/search.png" alt="" onclick="fetchWeather()"></button>
+        </div>
+        <p class="invalid">Invalid City Name</p>
+
+        <div class="weather">
+            <img src="images/clouds.png" alt="" class="weather-icon" id="weatherImg">
+            <h1 id="temp">0°C</h1>
+            <h2 id="cityName">City Name</h2>
+        </div>
+
+        <div class="moreinfo">
+            <div class="col">
+                <img src="images/humidity.png" alt="">
+                <div>
+                    <p class="humidity">0%</p>
+                    <p class="speed">humidity</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="images/wind.png" alt="">
+                <div>
+                    <p class="wind">0km/h</p>
+                    <p class="speed">wind speed</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
